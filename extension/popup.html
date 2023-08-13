@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div style="display: flex;flex-direction: column;width: 400px;align-items: center;">
+        <h1>Thas Crazy Chat</h1>
+        <h3>Feeling lonely? Bring the face of streamers on all the videos, rarely with any commentary!</h3>
+
+        <label for="secs">Seconds to skip on Arrow actions:</label>
+        <input type="number" placeholder="5" id="secs">
+
+        <label for="streamer">Streamer:</label>
+        <input list="streamers" name="streamer" id="streamer">
+        <datalist id="streamers">
+            <option value="http://localhost:3000/xqc.mp4">
+            <option value="http://localhost:3000/pyro.mp4">
+            <option value="http://localhost:3000/charlie.mp4">
+        </datalist>
+
+        <button id="submitBtn">Update</button>
+    </div>
+
+    <script src="/popup.js"></script>
+</body>
+
+</html>

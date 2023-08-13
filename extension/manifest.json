@@ -1,0 +1,29 @@
+{
+  "name": "ThasCrazyChat",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "ThasCrazyChat",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "background",
+    "activeTab",
+    "scripting",
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://*/",
+    "https://*/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["popup.js"]
+    }
+  ]
+}
