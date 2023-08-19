@@ -7,7 +7,7 @@ async function init() {
     const tempVar2 = await chrome.storage.local.get(["vidSrc"]);
 
     timer = tempVar || 5;
-    vidSrc = tempVar2 || 'http://localhost:3000/xqc.mp4';
+    vidSrc = tempVar2 || 'https://tcc-server.creeperita09.repl.co/xqc.mp4';
 }
 
 init();
